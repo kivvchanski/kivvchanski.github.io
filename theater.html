@@ -1,0 +1,91 @@
+<!-- banners and movie poster images are from https://www.cineplex.com/ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/triggered.png">
+  <link rel="stylesheet" href="style.css">
+  <title>VisionShow</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="CinemaLogo">
+        <a href="index.html">
+          <img class="logo" src="images/triggered.png" alt="VisionShow-Cinema">
+        </a>
+      </div>
+      <ul>
+        <li><a id="home" href="index.html">Главная</a></li>
+        <li><a id="tickets" href="ticketBookingForm.html">Билеты</a></li>
+        <li><a id="movies" href="movieInfo.html">Фильмы</a></li>
+        <li><a id="theater" href="theater.html">Кинотеатры</a></li>
+      </ul>
+      <div id="guide"><a href="index.html">Главная </a> >>&nbsp;<a href="theater.html">Кинотеатры</a></div>
+    </nav>
+  </header>
+  <main>
+    <section class="locations">
+      <h3>Theater</h3>
+      <div class="find">
+        <h4>Find a theater</h4>
+        <hr class="hr2"><br>
+        <form action="">
+          <label for="findTheater"></label>
+          <select name="findTheater" id="findTheater">
+            <option>--</option>
+            <option>Metropolis Theater</option>
+            <option>Vancouver Theater</option>
+            <option>Coquitlam Theater</option>
+            <option>Brentwood Theater</option>
+          </select>
+          <button id="findBtn" type="button" onclick="ShowTheater()">Search</button>
+        </form><br>
+        <p id="address"> </p>
+        <p id="tel"> </p>
+      </div>
+      <div class="location">
+        <h4>Metropolis Theater</h4>
+        <p>4700 Kingsway, Burnaby, BC, V5H 4M1</p>
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2604.1561341764964!2d-123.11705798431151!3d49.254486479328314!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673eef1e57515%3A0xb1f50471b8ca9950!2sThe%20Park%20Theatre!5e0!3m2!1szh-TW!2sca!4v1638126849378!5m2!1szh-TW!2sca"
+          style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="location">
+        <h4>Vancouver Theater</h4>
+        <p>440 Cambie St., Vancouver, BC, V5Z 2W8</p>
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.788228180938!2d-123.10916008513531!3d49.28040987885409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486717a4be7e661%3A0xab235a2e1b7556bf!2s88%20W%20Pender%20St%203rd%20Floor%2C%20Vancouver%2C%20BC%20V6B%206N9!5e0!3m2!1szh-TW!2sca!4v1638127107829!5m2!1szh-TW!2sca"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="location">
+        <h4>Coquitlam Theater</h4>
+        <p>170 Schoolhouse Street, Coquitlam, BC, V3K 4X9</p>
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.174817757814!2d-122.8566252851374!3d49.23517468205793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54867875ccddfb11%3A0x1fb7f09fb51ebd6!2s170%20Schoolhouse%20St%2C%20Coquitlam%2C%20BC%20V3K%206V6!5e0!3m2!1szh-TW!2sca!4v1638127208241!5m2!1szh-TW!2sca"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="location">
+        <h4>Brentwood Theater</h4>
+        <p>3106 1920 Willingdon Ave, Burnaby, BC, V5C 0K3</p>
+        <iframe class="maps"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.501667051862!2d-123.11807648513856!3d49.21001238383923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548674f68e5c15f7%3A0x1b6e7bd4d4cc8e9a!2s452%20SW%20Marine%20Dr%2C%20Vancouver%2C%20BC%20V5X%200C3!5e0!3m2!1szh-TW!2sca!4v1638127267339!5m2!1szh-TW!2sca"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="CinemaLogo">
+      <img class="logo" src="images/logo.png" alt="VisionShow-Cinema">
+    </div>
+    <hr class="hr1">
+    <p class="copyright">Copyright &copy; Joling Weng 300335548</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

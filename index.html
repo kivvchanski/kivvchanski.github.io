@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/triggered.png">
+  <link rel="stylesheet" href="style.css">
+  <title>VisionShow</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="CinemaLogo">
+        <a href="index.html">
+          <img class="logo" src="images/triggered.png" alt="VisionShow-Cinema">
+        </a>
+      </div>
+      <ul>
+        <li><a id="home" href="index.html">Главная</a></li>
+        <li><a id="tickets" href="ticketBookingForm.html">Билеты</a></li>
+        <li><a id="movies" href="movieInfo.html">Фильмы</a></li>
+        <li><a id="theater" href="theater.html">Кинотеатры</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="topBanner">
+      <div class="banner1">
+        <img id="banner" class="banner" src="images/EncantoBanner.jpeg" height="500px" alt="Encanto" srcset="">
+      </div>
+      <div id="imgShiftBtn">
+        <button class="btn" type="button" aria-label="Go-to-number-1" onclick="changeImg(1)"></button>
+        <button class="btn" type="button" aria-label="Go-to-number-2" onclick="changeImg(2)"></button>
+        <button class="btn" type="button" aria-label="Go-to-number-3" onclick="changeImg(3)"></button>
+        <button class="btn" type="button" aria-label="Go-to-number-4" onclick="changeImg(4)"></button>
+      </div>
+      <div class="bannerBottom"></div>
+    </div>
+    <section class="MovieIntro">
+      <div class="movie-grid-container">
+        <h3>Фильмы</h3>
+        <h4>— Новинки —</h4>
+        <div class="movies">
+          <div class="movie">
+            <a href="https://www.warnerbros.com/movies/dune" target="_blank">
+              <div>
+                <span class="hoverBorder"></span>
+                <div class="imgHover">
+                  <img src="images/dune.jpg" alt="Dune" width="300" height="350" class = "typimg">
+                </div>
+              </div>
+            </a>
+            <div class="movieName">
+              <pre>
+              <p class="name">Dune</p>
+              <a class="trailer" href="https://www.imdb.com/video/vi3986080537?playlistId=tt1160419" target="_blank">
+                <p class="trailer1">TRAILER</p></a>
+            </pre>
+            </div>
+          </div>
+          <div class="movie">
+            <a href="https://www.marvel.com/movies/eternals">
+              <div>
+                <span class="hoverBorder"></span>
+                <div class="imgHover">
+                  <img src="images/Eternals.jpg" alt="Eternals" width="300" height="350" class = "typimg">
+                </div>
+              </div>
+            </a>
+            <div class="movieName">
+              <pre>
+              <p class="name">Eternals</p>
+              <a class="trailer" href="https://www.marvel.com/movies/eternals" target="_blank">
+                <p class="trailer1">TRAILER</p>
+              </a>
+            </pre>
+            </div>
+          </div>
+          <div class="movie">
+            <a href="https://movies.disney.com/encanto" target="_blank">
+              <div >
+                <span class="hoverBorder"></span>
+                <div class="imgHover">
+                  <img src="images/encanto.jpg" alt="Encanto" width="300" height="350" class = "typimg">
+                </div>
+              </div>
+            </a>
+            <div class="movieName">
+              <pre>
+              <p class="name">Encanto</p>
+              <a class="trailer" href="https://video.disney.com/watch/disney-s-encanto-official-trailer-5cd227e2fc288ebd6b4f2a72" target="_blank">
+                <p class="trailer1">TRAILER</p>
+              </a>
+            </pre>
+            </div>
+          </div>
+        </div>
+        <h4>— Неустаревающая классика —</h4>
+        <div class="movies">
+          <div class="movie">
+            <a href="https://www.20thcenturystudios.com/movies/the-kings-man">
+              <div >
+                <span class="hoverBorder"></span>
+                <div class="imgHover">
+                  <img src="images/KingsMan.jpg" alt="The King's Man" width="300" height="350" class = "typimg">
+                </div>
+              </div>
+            </a>
+            <div class="movieName">
+              <pre>
+              <p class="name">The King's Man</p>
+              <a class="trailer" href="https://www.youtube.com/watch?v=s2yvVDF-Pyc" target="_blank">
+                <p class="trailer1">TRAILER</p>
+              </a>
+            </pre>
+            </div>
+          </div>
+          <div class="movie">
+            <a href="https://www.marvel.com/movies/spider-man-no-way-home" target="_blank">
+              <div >
+                <span class="hoverBorder"></span>
+                <div class="imgHover">
+                  <img src="images/spiderman.jpeg" alt="Spiderman: No Way Home" width="300" height="350" class = "typimg">
+                </div>
+              </div>
+            </a>
+            <div class="movieName">
+              <pre>
+              <p class="name">Spiderman: No Way Home</p>
+              <a class="trailer" href="https://www.youtube.com/watch?v=ZYzbalQ6Lg8" target="_blank">
+                <p class="trailer1">TRAILER</p>
+              </a>
+            </pre>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="newsList">
+      <h3>Latest News</h3>
+      <div class="news-grid">
+        <div class="news">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, numquam alias et saepe, natus praesentium reiciendis sit provident distinctio repudiandae possimus beatae at aliquam. Veritatis asperiores numquam sunt eaque dolore.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quae ratione vero minus, accusantium animi repellendus ea est labore amet, cupiditate porro voluptas, eius quas natus. Dignissimos voluptatibus voluptatem nostrum!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint eius quaerat voluptatem consequuntur minus, aperiam ducimus doloremque numquam reiciendis ab molestias beatae obcaecati fugit asperiores facilis. Ipsam in omnis quibusdam.</p>
+        </div>
+      </div>
+    </section>
+   
+  </main>
+  <footer>
+    <div class="CinemaLogo">
+      <img class="logo" src="images/triggered.png" alt="VisionShow-Cinema">
+    </div>
+    
+    <hr class="hr1">
+    <center>
+      <p>За информацией обращаться сюда:</p>
+      <address>Aidarov.aleksandr2@gmail.com</address>
+      <address> ИКБО-03-22, Айдаров А.К.</address>
+    </center>
+    <p class="copyright">Copyright &copy; Sanyaproduction</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

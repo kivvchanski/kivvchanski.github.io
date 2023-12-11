@@ -1,0 +1,381 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  min-height: 100%;
+  min-width: 600px;
+  background-color: #2b0245;
+}
+h3 {
+  color:goldenrod
+}
+.CinemaLogo{
+  text-align: center;
+}
+.logo{
+  display: block;  
+margin-left: auto;  
+margin-right: auto;
+width: 100px;
+height: auto;  
+}
+header{
+  background-color: #2b0245;
+  position: sticky;
+  height: 9em;
+}
+header a{
+  text-decoration: none;
+  color:antiquewhite;
+
+}
+nav ul{
+list-style-type: none;
+display: flex;
+max-height: 500px;
+justify-content: center;
+overflow: hidden;
+margin: auto;
+}
+nav li{
+  padding: 8px;
+  
+}
+nav a:hover{
+  color: burlywood;
+  text-shadow: 3px 2px 5px goldenrod;
+}
+#guide{
+  background:linear-gradient(to right,rgb(144, 32, 218),#0f0016);
+  height: 1.5em;
+  padding:5px 0px 0px 5px;
+  
+}
+.banner1{
+  height: 500px;
+  position: relative;
+}
+.banner{
+  border: none;
+  width: 100%
+}
+#imgShiftBtn{
+  width: 100%;
+  display: flex;
+  position: absolute;
+  z-index: 2;
+  align-items: center;
+  justify-content: center;
+  
+}
+.btn{
+  border-radius: 50%;
+  cursor: pointer;
+  width: 12px;
+  height: 12px;
+  margin-right: 15px;
+  border: 0.5px solid #EEEEEE;
+  margin-top: 1%;
+  background-color: #2b0245;
+}
+.btn:hover{
+  background-color: gray;
+}
+
+.bannerBottom{
+  display: flex;
+  height: 50px;
+  background:linear-gradient(to top,#2b0245,#0f0016);
+}
+h3{
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  font-size: 30px;
+}
+h4{
+  color: rgb(233, 233, 233);
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.movies{
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  flex-direction: row;
+  padding-left: 20px;
+}
+.movie{
+  padding: 5%;
+  border-radius: 5%;
+  
+  margin-inline: 3%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.movie:hover{
+  padding-top: 10px;
+}
+.typimg {
+  border-radius: 5%;
+}
+.imgHover:hover{
+  width: 300px;
+  border-bottom: 3px solid navy;
+
+}
+pre{
+  line-height: 10px;
+}
+.name{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.imdbRatingPlugin{
+  text-decoration: none;
+}
+.trailer{
+  font-size: 20px;
+  font-weight: bold;
+  color: #440d8b;
+  text-decoration: none;
+  text-align: left;
+}
+.trailer1:hover{
+  color: goldenrod;
+  padding-bottom: 5px;
+  border-bottom: 2px solid goldenrod;
+
+}
+.fooddrink p{
+  margin-left: 20px;
+}
+.popcorn{
+  display: flex;
+  margin-left: 10px;
+}
+.description li{
+list-style-type: none;
+padding: 5px;
+margin: 5px;
+border:1px solid rgb(231, 183, 111);
+border-radius: 5px;
+width: 10em;
+background-color: blanchedalmond;
+color: darkgoldenrod;
+}
+.foodlist{
+  display: flex;
+}
+.drinks{
+  display: flex;
+  
+}
+.news-grid{
+  display: flex;
+  
+}
+.news{
+  width: 50%;
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 3px solid #2b0245;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
+  padding: 2%;
+}
+.news a{
+  text-decoration: none;
+  line-height: 2em;
+
+}
+.news p{
+    padding-bottom: 10px;
+}
+.news p:hover{
+  background-color: lavender;
+}
+
+.find{
+  margin-left: 50px;
+  margin-bottom: 50px;
+  margin-top: 10px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  width: 70%;
+  border: 1px solid grey;
+  box-shadow: 0px 0px 2px 3px gray;
+}
+#findTheater{
+  width: 60%;
+  height: 2em;
+  background-color: rgb(234, 241, 243);
+}
+#findBtn{
+  height: 2em;
+  width: 80px;
+  margin-left: 10px;
+  background-color:midnightblue;
+  color: aliceblue;
+  border-radius: 0.5em;
+}
+.find h4{
+  margin-left: -20px;
+}
+.hr2{
+  width: 80%;
+  height: 1px;
+  background-color: gray;
+  border: none;
+}
+.find p{
+  line-height: 2em;
+}
+.location{
+  border: 1px solid gray;
+  border-radius: 1em;
+  margin-bottom: 5%;
+  margin-left: 3em;
+  width: 80%;
+  justify-items: center;
+  height: 250px;
+  box-shadow: 5px 5px 5px lavender;
+
+}
+.location p{
+  margin-left: 20px;
+}
+.location:hover{
+  border: 1px solid goldenrod;
+}
+.location h4{
+  color:indigo;
+  font-size: 20px;
+}
+.maps{
+  height: 150px;
+  width: 90%;
+  border: 1px solid gray;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.movie-blocks{
+  display: flex;
+  padding: 5em;
+  align-items: center;
+}
+.mDetails{
+  margin-left: 2em;
+  
+}
+.genre{
+  display:flex;
+}
+.genre p{
+  border: 1px solid cornflowerblue;
+  border-radius: 1em;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding: 5px;
+  color: cornflowerblue;
+}
+.mDetails li{
+  line-height: 2em;
+  font-size: smaller;
+}
+.buyticketsBtn{
+  margin-top: 2em;
+  margin-left: 20px;
+  background-color: #2b0245;
+  color: antiquewhite;
+  width: 30%;
+  height: 3em;
+  border: none;
+  cursor: pointer;
+}
+.buyticketsBtn:hover{
+  box-shadow: 2px 2px 5px 2px grey;
+  color: goldenrod;
+}
+#formArea{
+  display: inline;
+  justify-content: center;
+  text-align: center;
+  
+}
+fieldset{
+  border-radius: 1em;
+  background-color: lavender;
+  margin-right: 5em;
+  margin-left: 5em;
+}
+.MovieSelection{
+  width: 100%;
+  margin-top: 5%;
+  justify-items: center;
+  text-align: center;
+}
+
+#mName, #mTheater, #mDate, #showTimeBtn{
+width: 60%;
+height: 2em;
+margin-bottom: 1em;
+}
+#showTimeBtn{
+  background-color: #2b0245;
+  color: antiquewhite;
+  border: none;
+}
+#showTimeBtn:hover{
+  background-color: midnightblue;
+}
+
+.psInfo{
+  display: block;
+  margin-bottom: 5%;
+  margin-top: 3%;
+}
+.col1{
+  line-height: 2em;
+  text-align: left;
+  margin-left: 25%;
+}
+#submit{
+  background-color: #2b0245;
+  color: antiquewhite;
+  border: none;
+  width: 50%;
+  height: 24px;
+  margin-bottom: 2%;
+}
+#submit:hover{
+  background-color: midnightblue;
+}
+
+footer{
+  clear: both;
+  background-color: #2b0245;
+  color: antiquewhite;
+  position: absolute;
+  width: 100%;
+  position: relative;
+  
+}
+.hr1{
+  border: none;
+  height: 0.5px;
+  color:rgb(123, 127, 138); 
+  background-color:rgb(123, 127, 138);
+  width:60%; 
+  text-align:center; 
+  margin: 0 auto;
+}
+.copyright{
+  text-align: center;
+  font-size: 10px;
+  padding-top: 10px;
+padding-bottom: 5px;
+}

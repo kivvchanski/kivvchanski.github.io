@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="images/triggered.png">
+  <link rel="stylesheet" href="style.css">
+  <title>VisionShow</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="CinemaLogo">
+        <a href="index.html">
+          <img class="logo" src="images/triggered.png" alt="VisionShow-Cinema">
+        </a>
+      </div>
+      <ul>
+        <li><a id="home" href="index.html">Главная</a></li>
+        <li><a id="tickets" href="ticketBookingForm.html">Билеты</a></li>
+        <li><a id="movies" href="movieInfo.html">Фильмы</a></li>
+        <li><a id="theater" href="theater.html">Кинотеатры</a></li>
+      </ul>
+    </nav>
+    <div id="guide"><a href="index.html">Главная </a> >>&nbsp;<a href="TicketBookingForm.html">Билеты</a></div>
+  </header>
+  <main id="formArea">
+    <div class="MovieSelection">
+      <form action="">
+        <fieldset>
+          <legend>Select Your Movie Options</legend>
+          <select name="mName" id="mName" onchange="isAvailable()">
+            <option>--SELECT MOVIE--</option>
+            <option>Dune</option>
+            <option>Eternals</option>
+            <option>Encanto</option>
+            <option>The King's Man</option>
+            <option>Spider Man: No Way Home</option>
+          </select>
+          <select name="mTheater" id="mTheater">
+            <option>--SELECT THEATER--</option>
+            <option>Metropolis Theater</option>
+            <option>Vancouver Theater</option>
+            <option>Coquitlam Theater</option>
+            <option>Brentwood Theater</option>
+          </select>
+          <select name="mDate" id="mDate">
+            <option>--SELECT DATE--</option>
+            <option>2021-12-06</option>
+            <option>2021-12-07</option>
+            <option>2021-12-08</option>
+            <option>2021-12-09</option>
+            <option>2021-12-10</option>
+            <option>2021-12-11</option>
+            <option>2021-12-12</option>
+          </select>
+          <button id="showTimeBtn" type="button" onclick="availabilityBtn()">CHECK SHOW TIMES</button>
+        </fieldset>
+      </form>
+    </div>
+    <div class="personalInfo">
+      <form class="psInfo" action="">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="col1">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" placeholder="Enter your first name" required disabled>
+          </div>
+          <div class="col1"><label for="lname">Last name</label>
+            <input type="text" id="lname" placeholder="Enter your last name" required disabled>
+          </div>
+          <div class="col1">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required disabled>
+          </div>
+          <div class="col1">
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone" placeholder="Enter your phone number" disabled>
+          </div>
+
+          <div class="col1">
+            <label for="schedule">Select a showtime</label>
+            <select name="schedule" id="schedule" disabled>
+              <option value="">10:30 am</option>
+              <option value="">12:30 pm</option>
+              <option value="">3:30 pm</option>
+              <option value="">6:30 pm</option>
+              <option value="">8:30 pm</option>
+              <option value="">10:30 pm</option>
+            </select>
+          </div>
+          <div class="col1">
+            <label for="ticketNum">How many tickets do you want to buy?</label>
+            <input type="number" name="ticketNum" id="ticketNum" step="1" value="1" min="1" max="10" disabled>
+          </div>
+          <div class="col1">
+            <label for="showroom">2D/3D showroom</label>
+            <label> <input type="radio" name="showroom" id="2d" value="17" checked disabled /> 2D</label>
+            <label> <input type="radio" name="showroom" id="3d" value="25" disabled /> 3D</label>
+          </div>
+          <div class="col1">
+            <label for="membership">Are you a member of VisionShow?</label>
+            <label> <input type="radio" name="membership" id="yes" value="Yes" checked disabled /> Yes</label>
+            <label> <input type="radio" name="membership" id="no" value="No" disabled /> No</label>
+          </div>
+
+
+          <button type="button" id="submit" value="submit" onclick="submitFuc()" disabled>SUBMIT</button>
+        </fieldset>
+      </form>
+    </div>
+
+  </main>
+  <footer>
+    <div class="CinemaLogo">
+      <img class="logo" src="images/logo.png" alt="VisionShow-Cinema">
+    </div>
+    <hr class="hr1">
+    <p class="copyright">Copyright &copy; Joling Weng 300335548</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
