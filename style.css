@@ -105,13 +105,13 @@ h4{
   
   flex-direction: row;
   padding-left: 20px;
-  @media (width < 720) {
+  @media (width < 720px) {
     grid-template-columns: repeat(1, 350px);
   }
-  @media (width > 720) {
+  @media (width > 720px) {
     grid-template-columns: repeat(2, 350px);
   }
-  @media (width > 1050) {
+  @media (width > 1050px) {
     grid-template-columns: repeat(3, 350px);
   }
 }
