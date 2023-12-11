@@ -102,9 +102,18 @@ h4{
 }
 .movies{
   display: grid;
-  grid-template-columns: repeat(3, 350px);
+  
   flex-direction: row;
   padding-left: 20px;
+  @media (width < 720) {
+    grid-template-columns: repeat(1, 350px);
+  }
+  @media (width > 720) {
+    grid-template-columns: repeat(2, 350px);
+  }
+  @media (width > 1050) {
+    grid-template-columns: repeat(3, 350px);
+  }
 }
 .movie{
   padding: 5%;
