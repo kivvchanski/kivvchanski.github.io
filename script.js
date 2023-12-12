@@ -1,3 +1,18 @@
+window.addEventListener("load", function(){
+  var loader = document.getElementById("loader");
+
+  setTimeout(() => {
+    loader.style.display = "none";
+  }, 3000);
+});
+
+// Simulate loading delay (for testing purposes)
+setTimeout(function(){
+  var loader = document.getElementById("loader");
+
+  loader.style.display = "none";
+}, 3000);
+
 //show theater address and phone number by selecting the theater name in theater.html
 function ShowTheater() {
   let index = document.getElementsByName("findTheater")[0].selectedIndex;
@@ -60,19 +75,6 @@ function changeImg(num) {
   setInterval(changeBanner, 10000);
 
 }
-window.addEventListener("load", function(){
-  var loader = document.getElementById("loader");
-
-  // Hide loader
-  loader.style.display = "none";
-});
-
-// Simulate loading delay (for testing purposes)
-setTimeout(function(){
-  var loader = document.getElementById("loader");
-
-  loader.style.display = "none";
-}, 30000);
 
 //plug-in IMDB script used on movie info page
 ((d, s, id) => {

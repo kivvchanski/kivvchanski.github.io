@@ -487,6 +487,7 @@ select {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  z-index: 1000;
 }
 
 #loader-text {
@@ -502,9 +503,10 @@ select {
   border: 5px solid #333333;
   border-top-color: #ffffff;
   animation: spin 1s linear infinite;
+  z-index: 1000000;
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% { transform: rotate(0deg); z-index: 1000;}
+  100% { transform: rotate(360deg); z-index: 1000;}
 }
