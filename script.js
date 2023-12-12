@@ -5,9 +5,9 @@ function ShowTheater() {
   let address = document.getElementById("address");
   let tel = document.getElementById("tel");
 
-  let addr = ["", "4700 Kingsway, Burnaby, BC, V5H 4M1", "440 Cambie St., Vancouver, BC, V5Z 2W8", "170 Schoolhouse Street, Coquitlam, BC, V3K 4X9", "3106 1920 Willingdon Ave, Burnaby, BC, V5C 0K3"];
+  let addr = ["", "adress1", "adress2", "adress3", "adress4"];
 
-  let telArr = ["", "(604) 435 - 7474 ", "(604) 734 - 7469 ", "(604) 523 - 2911 ", "(604) 245 - 8983 "];
+  let telArr = ["", "number films1", "number films2", "number films3 ", "number films4 "];
 
   if (index == 0) {
     address.innerHTML = "";
@@ -22,7 +22,7 @@ function ShowTheater() {
 
 //generate function to repeatedly change the banner
 let banners = document.getElementById("banner");
-let imgArr = ["images/EternalsBanner.jpg", "images/Dune2020-logo-header.jpg", "images/EncantoBanner.jpeg", "images/spiderManBanner.png"]
+let imgArr = ["images/kartinka1.jpg", "images/kartinka2.jpg", "images/kartinka3.jpeg", "images/kartinka4.jpg"]
 
 let currentImg = 0;
 function changeBanner() {
@@ -46,7 +46,7 @@ function changeImg(num) {
 
   switch (num) {
     case (1):
-      banners.src = "images/EternalsBanner.jpg";
+      banners.src = imgArr[0];
       break;
     case (2):
       banners.src = imgArr[1];
@@ -60,7 +60,19 @@ function changeImg(num) {
   setInterval(changeBanner, 10000);
 
 }
+window.addEventListener("load", function(){
+  var loader = document.getElementById("loader");
 
+  // Hide loader
+  loader.style.display = "none";
+});
+
+// Simulate loading delay (for testing purposes)
+setTimeout(function(){
+  var loader = document.getElementById("loader");
+
+  loader.style.display = "none";
+}, 30000);
 
 //plug-in IMDB script used on movie info page
 ((d, s, id) => {
@@ -73,53 +85,27 @@ function changeImg(num) {
 //check if the movie is available right now
 function isAvailable() {
   let mName = document.getElementById("mName");
-  let indexOfMoive = mName.selectedIndex;
-  // let options = mName.selectedOptions;
-  if (indexOfMoive == 4 || indexOfMoive == 5) {
-    alert("This movie is not released yet. Please purchase the tickets 7 days before the released date.")
-    mName.selectedIndex = 0;
-  }
 }
 
 //enable the personal information form after movie options has been verified
 function availabilityBtn() {
   let indexOfMoive = document.getElementById("mName").selectedIndex;
-  let indexOfTheater = document.getElementById("mTheater").selectedIndex;
-  let indexOfDate = document.getElementById("mDate").selectedIndex;
 
-  if (indexOfMoive != 0 && indexOfTheater != 0 && indexOfDate != 0) {
-    alert("Seats available!");
+  if (indexOfMoive != 0) {
+    alert("Напишите отзыв!");
     document.getElementById("fname").disabled = false;
-    document.getElementById("lname").disabled = false;
-    document.getElementById("email").disabled = false;
-    document.getElementById("phone").disabled = false;
-    document.getElementById("schedule").disabled = false;
-    document.getElementById("ticketNum").disabled = false;
     document.getElementById("2d").disabled = false;
     document.getElementById("3d").disabled = false;
-    document.getElementById("yes").disabled = false;
     document.getElementById("no").disabled = false;
+    document.getElementById("yes").disabled = false;
     document.getElementById("submit").disabled = false;
   }
 }
 
 // show total amount and thank you message using altert
 function submitFuc() {
-
-  let email = document.getElementById("email");
-  let ticketNum = document.getElementById("ticketNum").value;
-  // console.log(ticketNum);
-  let price1 = document.getElementsByName("showroom")[0];
-  let price2 = document.getElementsByName("showroom")[1];
-  const tax = 0.12;
-  if (price1.checked) {
-    alert("Thank you for purchasing!" + "\r\n" + "The total amount is $" + (ticketNum * price1.value * (1 + tax)).toFixed(2) + " (tax inclueded)" + "\r\n" + "We will send email to your email address " + email.value + " for your confirmation.");
-    // console.log((ticketNum * price1.value * (1 + tax)).toFixed(2))
-  }
-  else if (price2.checked) {
-    // console.log((ticketNum * price2.value * (1 + tax)).toFixed(2))
-    alert("Thank you for purchasing!" + "\r\n" + "The total amount is $" + (ticketNum * price2.value * (1 + tax)).toFixed(2) + " (tax inclueded)" + "\r\n" + "We will send email to your email address " + email.value + " for your confirmation.");
-  }
-
+ alert("Спасибо за ваш отзыв!");
+ open("index.html");
 }
+
 

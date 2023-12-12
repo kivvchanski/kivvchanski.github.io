@@ -7,30 +7,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="images/triggered.png">
   <link rel="stylesheet" href="style.css">
-  <title>VisionShow</title>
+  <title>Sanfilm</title>
 </head>
 
 <body>
+  <div id="loader">
+    <div id="loader-text">Загрузка...</div>
+    <div id="loader-animation"></div>
+</div>
   <header class="header">
     <nav class="nav">
       <div class="CinemaLogo">
         <a href="index.html">
-          <img class="logo" src="images/triggered.png" alt="VisionShow-Cinema">
+          <img class="logo" src="images/triggered.png">
         </a>
       </div>
       <ul>
-        <li><a id="home" href="index.html">Главная</a></li>
-        <li><a id="tickets" href="ticketBookingForm.html">Билеты</a></li>
-        <li><a id="movies" href="movieInfo.html">Фильмы</a></li>
-        <li><a id="theater" href="theater.html">Кинотеатры</a></li>
-        <li><a id="register" href="register.html">Регистрация</a></li>
+        
+        <li><h2><a id="home" href="index.html">Главная</a></h2></li>
+        <li><h2><a id="tickets" href="ticketBookingForm.html">Отзывы</a></h2></li>
+        <li><h2><a id="movies" href="movieInfo.html">Фильмы</a></h2></li>
+        <li><h2><a id="theater" href="theater.html">Производство</a></h2></li>
+        <li><h2><a id="register" href="register.html">Регистрация</a></h2></li>
       </ul>
     </nav>
   </header>
   <main>
     <div id="topBanner">
       <div class="banner1">
-        <img id="banner" class="banner" src="images/EncantoBanner.jpeg" height="500px" alt="Encanto" srcset="">
+        <center>
+        <img id="banner" class="banner" src="images/kartinka1.jpg" height="500px" srcset="">
+      </center>
       </div>
       <div id="imgShiftBtn">
         <button class="btn" type="button" aria-label="Go-to-number-1" onclick="changeImg(1)"></button>
@@ -42,58 +49,60 @@
     </div>
     <section class="MovieIntro">
       <div class="movie-grid-container">
+        <center>
         <h3>Фильмы</h3>
         <h4>— Новинки —</h4>
+      </center>
         <div class="movies">
           <div class="movie">
-            <a href="https://www.warnerbros.com/movies/dune" target="_blank">
+            <a target="_blank">
               <div>
                 <span class="hoverBorder"></span>
                 <div class="imgHover">
-                  <img src="images/dune.jpg" alt="Dune" width="300" height="350" class = "typimg">
+                  <img src="images/kartinka1.jpg"  width="330" height="350" class = "typimg">
                 </div>
               </div>
             </a>
             <div class="movieName">
               <pre>
-              <p class="name">Dune</p>
-              <a class="trailer" href="https://www.imdb.com/video/vi3986080537?playlistId=tt1160419" target="_blank">
-                <p class="trailer1">TRAILER</p></a>
+              <p class="name">Фильм1</p>
+              <a class="trailer" target="_blank">
+                <p class="trailer1">Трейлер</p></a>
             </pre>
             </div>
           </div>
           <div class="movie">
-            <a href="https://www.marvel.com/movies/eternals">
+            <a>
               <div>
                 <span class="hoverBorder"></span>
                 <div class="imgHover">
-                  <img src="images/Eternals.jpg" alt="Eternals" width="300" height="350" class = "typimg">
+                  <img src="images/kartinka2.jpg"  width="330" height="350" class = "typimg">
                 </div>
               </div>
             </a>
             <div class="movieName">
               <pre>
-              <p class="name">Eternals</p>
-              <a class="trailer" href="https://www.marvel.com/movies/eternals" target="_blank">
-                <p class="trailer1">TRAILER</p>
+              <p class="name">Фильм2</p>
+              <a class="trailer" target="_blank">
+                <p class="trailer1">Трейлер</p>
               </a>
             </pre>
             </div>
           </div>
           <div class="movie">
-            <a href="https://movies.disney.com/encanto" target="_blank">
+            <a target="_blank">
               <div >
                 <span class="hoverBorder"></span>
                 <div class="imgHover">
-                  <img src="images/encanto.jpg" alt="Encanto" width="300" height="350" class = "typimg">
+                  <img src="images/kartinka3.jpeg" alt="Encanto" width="330" height="350" class = "typimg">
                 </div>
               </div>
             </a>
             <div class="movieName">
               <pre>
-              <p class="name">Encanto</p>
-              <a class="trailer" href="https://video.disney.com/watch/disney-s-encanto-official-trailer-5cd227e2fc288ebd6b4f2a72" target="_blank">
-                <p class="trailer1">TRAILER</p>
+              <p class="name">Фильм3</p>
+              <a class="trailer" target="_blank">
+                <p class="trailer1">Трейлер</p>
               </a>
             </pre>
             </div>
@@ -102,37 +111,37 @@
         <h4>— Неустаревающая классика —</h4>
         <div class="movies">
           <div class="movie">
-            <a href="https://www.20thcenturystudios.com/movies/the-kings-man">
+            <a >
               <div >
                 <span class="hoverBorder"></span>
                 <div class="imgHover">
-                  <img src="images/KingsMan.jpg" alt="The King's Man" width="300" height="350" class = "typimg">
+                  <img src="images/kartinka4.jpg" alt="The King's Man" width="330" height="350" class = "typimg">
                 </div>
               </div>
             </a>
             <div class="movieName">
               <pre>
-              <p class="name">The King's Man</p>
-              <a class="trailer" href="https://www.youtube.com/watch?v=s2yvVDF-Pyc" target="_blank">
-                <p class="trailer1">TRAILER</p>
+              <p class="name">Фильм4</p>
+              <a class="trailer" target="_blank">
+                <p class="trailer1">Трейлер</p>
               </a>
             </pre>
             </div>
           </div>
           <div class="movie">
-            <a href="https://www.marvel.com/movies/spider-man-no-way-home" target="_blank">
+            <a  target="_blank">
               <div >
                 <span class="hoverBorder"></span>
                 <div class="imgHover">
-                  <img src="images/spiderman.jpeg" alt="Spiderman: No Way Home" width="300" height="350" class = "typimg">
+                  <img src="images/triggered.png" alt="Spiderman: No Way Home" width="330" height="350" class = "typimg">
                 </div>
               </div>
             </a>
             <div class="movieName">
               <pre>
-              <p class="name">Spiderman: No Way Home</p>
-              <a class="trailer" href="https://www.youtube.com/watch?v=ZYzbalQ6Lg8" target="_blank">
-                <p class="trailer1">TRAILER</p>
+              <p class="name">Фильм5</p>
+              <a class="trailer"  target="_blank">
+                <p class="trailer1">Трейлер</p>
               </a>
             </pre>
             </div>

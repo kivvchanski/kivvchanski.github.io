@@ -5,7 +5,38 @@
 body{
   min-height: 100%;
   min-width: 600px;
-  background-color: #2b0245;
+  background: linear-gradient(
+    135deg,
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134),
+    #000000,
+    rgb(96, 0, 134)
+  );
+  background-size: 800% 800%;
+  animation: gradientAnimation 20s ease infinite;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 h3 {
   color:goldenrod
@@ -58,7 +89,8 @@ nav a:hover{
 }
 .banner{
   border: none;
-  width: 100%
+  width: 900px;
+  border-radius: 20px;
 }
 #imgShiftBtn{
   width: 100%;
@@ -104,18 +136,19 @@ h4{
   display: grid;
   
   flex-direction: row;
-  padding-left: 20px;
-  @media (width < 750px) {
-    grid-template-columns: repeat(1, 350px);
+  @media (width < 840px) {
+    grid-template-columns: repeat(1, 400px);
   }
-  @media (width > 750px) {
-    grid-template-columns: repeat(2, 350px);
+  @media (width > 840px) {
+    grid-template-columns: repeat(2, 400px);
   }
-  @media (width > 1100px) {
-    grid-template-columns: repeat(3, 350px);
+  @media (width > 1250px) {
+    grid-template-columns: repeat(3, 400px);
   }
-  justify-content: space-between;
-  padding: 7%;
+  @media (width < 1300px) {
+    justify-content: space-between;
+  }
+  padding: 5%;
 }
 .movie{
   padding: 5%;
@@ -127,12 +160,13 @@ h4{
 }
 .movie:hover{
   padding-top: 10px;
+  cursor: pointer;
 }
 .typimg {
   border-radius: 5%;
 }
 .imgHover:hover{
-  width: 300px;
+  width: 330px;
   border-bottom: 3px solid navy;
 
 }
@@ -218,10 +252,12 @@ color: darkgoldenrod;
   width: 70%;
   border: 1px solid grey;
   box-shadow: 0px 0px 2px 3px gray;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 20px;
 }
 #findTheater{
   width: 60%;
-  height: 2em;
   background-color: rgb(234, 241, 243);
 }
 #findBtn{
@@ -237,7 +273,6 @@ color: darkgoldenrod;
 }
 .hr2{
   width: 80%;
-  height: 1px;
   background-color: gray;
   border: none;
 }
@@ -272,9 +307,16 @@ color: darkgoldenrod;
   padding-top: 10px;
   margin-left: 20px;
 }
-
+.cart {
+  @media (width <= 800px) {
+    margin-left: 20%;
+  }
+}
 .movie-blocks{
-  display: flex;
+  display: block;
+  @media (width > 800px) {
+    display: flex;
+  }
   margin: 4em;
   border-radius: 10px;
   padding: 1em;
@@ -290,12 +332,12 @@ color: darkgoldenrod;
   display:flex;
 }
 .genre p{
-  border: 1px solid cornflowerblue;
+  border: 1px solid rgb(23, 1, 65);
   border-radius: 1em;
   margin-right: 10px;
   margin-top: 5px;
   padding: 5px;
-  color: cornflowerblue;
+  color: rgb(72, 8, 97);
 }
 .mDetails li{
   line-height: 2em;
@@ -342,7 +384,6 @@ fieldset{
 
 #mName, #mTheater, #mDate, #showTimeBtn{
 width: 60%;
-height: 2em;
 margin-bottom: 1em;
 }
 #showTimeBtn{
@@ -362,7 +403,6 @@ margin-bottom: 1em;
 .col1{
   line-height: 2em;
   text-align: left;
-  margin-left: 25%;
 }
 #submit{
   background-color: #2b0245;
@@ -399,4 +439,72 @@ footer{
   font-size: 10px;
   padding-top: 10px;
 padding-bottom: 5px;
+}
+
+.form1 {
+  width: 80%;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #f2f2f26e;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.button1 {
+  width: 100%;
+  padding: 10px;
+  background-color: rgb(29, 170, 71);
+  color: rgba(0, 0, 0, 0.336);
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+}
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#loader-text {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#loader-animation {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #333333;
+  border-top-color: #ffffff;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
