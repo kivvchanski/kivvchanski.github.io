@@ -57,7 +57,7 @@ header{
   height: 9em;
   @media (orientation:portrait) {
     display:flex;
-    font-size: smaller;
+    font-size: small;
   }
   
 }
