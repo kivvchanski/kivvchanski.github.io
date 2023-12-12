@@ -55,6 +55,11 @@ header{
   background-color: #2b0245;
   position: sticky;
   height: 9em;
+  @media (orientation:portrait) {
+    display:flex;
+    font-size: smaller;
+  }
+  
 }
 header a{
   text-decoration: none;
@@ -83,14 +88,28 @@ nav a:hover{
   padding:5px 0px 0px 5px;
   
 }
+img {
+  @media (orientation:portrait) {
+    max-width: 100%;
+  }
+}
 .banner1{
   height: 500px;
   position: relative;
+  @media (orientation:portrait) {
+    display:flex;
+    font-size: smaller;
+    width: 80%;
+  }
 }
 .banner{
   border: none;
   width: 900px;
   border-radius: 20px;
+  @media (orientation:portrait) {
+    display:flex;
+    font-size: smaller;
+  }
 }
 #imgShiftBtn{
   width: 100%;
